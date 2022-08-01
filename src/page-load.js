@@ -1,5 +1,4 @@
 import './style.css';
-import restaurantImage from './assets/restaurant.jpg';
 import backgroundImage from './assets/background.jpg';
 import {loadHome} from "./pages/home";
 
@@ -30,6 +29,7 @@ function createNav() {
     const menuButton = document.createElement("button");
     const aboutButton = document.createElement("button");
 
+    box.classList.add("button-box");
     homeButton.textContent = "Home";
     menuButton.textContent = "Menu";
     aboutButton.textContent = "About";
@@ -44,12 +44,8 @@ function createNav() {
 function initWebsite() {
     const content = document.getElementById("content");
 
-    const image = new Image(250, 200);
-    image.src = restaurantImage;
-
     content.appendChild(createHeader());
     content.appendChild(createMain());
-    content.appendChild(image);
 
     loadHome();
 }
