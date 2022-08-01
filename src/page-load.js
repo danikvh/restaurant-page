@@ -1,5 +1,5 @@
 import './style.css';
-import restaurantImage from './restaurant.jpg';
+import restaurantImage from './assets/restaurant.jpg';
 import {loadHome} from "./pages/home";
 
 function createHeader() {
