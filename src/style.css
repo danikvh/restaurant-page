@@ -21,7 +21,8 @@ body {
 
 .header {
     width: 100%;
-    padding: 5vh;
+    padding: 30px;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +47,7 @@ body {
 }
 
 
-.home, .menu {
+.home, .menu, .about {
     height: 18rem;
     width: clamp(200px, 60vw, 800px);
     padding: 80px 30px;
@@ -59,6 +60,11 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.menu {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 .img-home {
     width: clamp(200px, 40vw, 400px);
     height: auto;
@@ -67,7 +73,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.158);
 }
 
-.textbox, .textmenu {
+.textbox, .textmenu, .textabout {
     width: 60%;
     text-align: center;
     font-weight: 550;
@@ -77,6 +83,19 @@ body {
 .textmenu {
     text-align: left;
     margin-left: 40%;
+}
+
+.textabout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(100px, 80%, 400px);
+    height: 60%;
+    background-color: rgba(48, 48, 48, 0.849);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    text-align: left;
+    padding: 20px;
 }
 
 button {

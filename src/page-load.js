@@ -2,6 +2,7 @@ import './style.css';
 import backgroundImage from './assets/background.jpg';
 import {loadHome} from "./pages/home";
 import loadMenu from "./pages/menu"
+import loadAbout from './pages/about';
 
 function createHeader() {
     const header = document.createElement("header");
@@ -40,6 +41,9 @@ function createNav() {
     });
     menuButton.addEventListener("click", (event) => {
         loadMenu();
+    });
+    aboutButton.addEventListener("click", (event) => {
+        loadAbout();
     });
 
     box.appendChild(homeButton);
