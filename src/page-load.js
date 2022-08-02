@@ -1,6 +1,7 @@
 import './style.css';
 import backgroundImage from './assets/background.jpg';
 import {loadHome} from "./pages/home";
+import loadMenu from "./pages/menu"
 
 function createHeader() {
     const header = document.createElement("header");
@@ -33,6 +34,13 @@ function createNav() {
     homeButton.textContent = "Home";
     menuButton.textContent = "Menu";
     aboutButton.textContent = "About";
+
+    homeButton.addEventListener("click", (event) => {
+        loadHome();
+    });
+    menuButton.addEventListener("click", (event) => {
+        loadMenu();
+    });
 
     box.appendChild(homeButton);
     box.appendChild(menuButton);

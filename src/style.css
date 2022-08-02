@@ -29,11 +29,15 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.headline {
+.headline, .menu-headline {
     margin-bottom: 1rem;
     font-family: 'Headline', cursive;
     font-size: 50px;
     color: white;
+}
+
+.menu-headline {
+    border-bottom: 1px solid white;
 }
 
 .button-box {
@@ -42,10 +46,10 @@ body {
 }
 
 
-.home {
+.home, .menu {
     height: 18rem;
     width: clamp(200px, 60vw, 800px);
-    padding: 60px 30px;
+    padding: 80px 30px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -63,11 +67,16 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.158);
 }
 
-.textbox {
+.textbox, .textmenu {
     width: 60%;
     text-align: center;
     font-weight: 550;
     letter-spacing: 1px;
+}
+
+.textmenu {
+    text-align: left;
+    margin-left: 40%;
 }
 
 button {
