@@ -44,13 +44,30 @@ body {
 
 .home {
     height: 18rem;
-    padding: 80px 20px;
+    width: clamp(200px, 60vw, 800px);
+    padding: 60px 30px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-home {
+    width: clamp(200px, 40vw, 400px);
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.158);
+}
+
+.textbox {
+    width: 60%;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing: 1px;
 }
 
 button {
